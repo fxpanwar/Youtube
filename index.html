@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Wale Baba | Monetization Help</title>
+  <meta name="description" content="YouTube monetization guidance by YouTube Wale Baba. Pay ₹150 and submit your payment screenshot to get WhatsApp guidance.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><span class="yt">▶</span> YouTube Wale Baba</div>
+    <a href="#payment" class="nav-btn">Get Help ₹150</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">● YOUTUBE MONETIZATION GUIDANCE</div>
+      <h1>Apne YouTube Channel ko <span>Monetize</span> karne ki sahi guidance paayein.</h1>
+      <p>Channel monetization, eligibility aur application process ko samajhne ke liye direct guidance lein.</p>
+      <div class="hero-actions">
+        <a class="primary" href="#payment">Get Guidance — ₹150</a>
+        <a class="secondary" href="#how">How it works</a>
+      </div>
+      <div class="trust-row">
+        <span>✓ Simple Process</span>
+        <span>✓ Direct WhatsApp</span>
+        <span>✓ YouTube Guidance</span>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="section-head">
+        <div class="eyebrow">HOW IT WORKS</div>
+        <h2>Sirf 3 simple steps</h2>
+      </div>
+      <div class="steps">
+        <div class="card"><div class="num">01</div><h3>Pay ₹150</h3><p>QR code/UPI ke through ₹150 payment complete karein.</p></div>
+        <div class="card"><div class="num">02</div><h3>Screenshot Upload</h3><p>Payment ka clear screenshot upload karke details submit karein.</p></div>
+        <div class="card"><div class="num">03</div><h3>WhatsApp Guidance</h3><p>Verification ke baad WhatsApp par direct contact karein.</p></div>
+      </div>
+    </section>
+
+    <section id="payment" class="payment-wrap">
+      <div class="payment-card">
+        <div class="eyebrow">STEP 01 · PAYMENT</div>
+        <h2>₹150 pay karke start karein</h2>
+        <p class="muted">Neeche apna UPI QR image add karein aur payment complete karein.</p>
+
+        <div class="qr-box">
+          <img id="qrImage" src="qr-placeholder.svg" alt="UPI QR Code">
+        </div>
+        <div class="upi">UPI ID: <strong id="upiText">YOUR-UPI@upi</strong></div>
+        <button class="copy-btn" onclick="copyUPI()">Copy UPI ID</button>
+
+        <div class="divider"><span>PAYMENT KE BAAD</span></div>
+
+        <form id="paymentForm">
+          <label>Naam</label>
+          <input id="name" type="text" placeholder="Apna naam" required>
+
+          <label>WhatsApp Number</label>
+          <input id="phone" type="tel" inputmode="numeric" placeholder="10 digit WhatsApp number" pattern="[0-9]{10}" required>
+
+          <label>YouTube Channel Link</label>
+          <input id="channel" type="url" placeholder="https://youtube.com/@yourchannel" required>
+
+          <label>Payment Screenshot</label>
+          <input id="screenshot" type="file" accept="image/*" required>
+          <div id="fileName" class="file-name">No file selected</div>
+
+          <button class="primary full" type="submit">Submit Payment Screenshot →</button>
+        </form>
+
+        <div class="notice">⚠️ Payment screenshot submission alone does not prove payment. Real verification should be performed before granting paid access.</div>
+      </div>
+    </section>
+
+    <section id="success" class="success hidden">
+      <div class="success-icon">✓</div>
+      <div class="eyebrow">SUBMISSION RECEIVED</div>
+      <h2>Details submit ho gayi hain.</h2>
+      <p>Demo mode mein WhatsApp button unlock ho gaya hai. Production website mein yahan server-side payment verification lagani chahiye.</p>
+      <a id="whatsappBtn" class="whatsapp" target="_blank" rel="noopener">💬 WhatsApp par Contact Karein</a>
+      <button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to Home</button>
+    </section>
+
+    <section class="faq section">
+      <div class="section-head"><div class="eyebrow">IMPORTANT</div><h2>Monetization ke baare mein</h2></div>
+      <div class="faq-grid">
+        <div class="faq-item"><h3>₹150 mein kya milega?</h3><p>YouTube monetization process ke baare mein direct guidance/contact.</p></div>
+        <div class="faq-item"><h3>Kya monetization guaranteed hai?</h3><p>Nahi. YouTube Partner Program approval YouTube ki eligibility, policies aur review par depend karta hai.</p></div>
+        <div class="faq-item"><h3>Payment ke baad kya karein?</h3><p>Payment screenshot aur required details submit karein. Verification ke baad WhatsApp contact provide kiya ja sakta hai.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>YouTube Wale Baba</strong><br><span>YouTube Monetization Guidance</span></div>
+    <span>© 2026 YouTube Wale Baba</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
